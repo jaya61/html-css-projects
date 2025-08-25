@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.lamp-container {
+  text-align: center;
+}
+
+.lamp {
+  width: 100px;
+  height: 100px;
+  background: #fff; /* OFF state */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #000 inset;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.lamp:hover {
+  background: #799EFF; /* ON state */
+  box-shadow: 
+    0 0 20px #799EFF,
+    0 0 40px #799EFF,
+    0 0 80px #799EFF,
+    0 0 120px #799EFF;
+}
